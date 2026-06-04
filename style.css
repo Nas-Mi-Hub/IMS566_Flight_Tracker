@@ -1,0 +1,78 @@
+/* Custom Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Dark Mode */
+[data-theme="dark"] body {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
+    color: #eee;
+}
+
+/* Glassmorphism Cards */
+.card, .navbar, .modal-content, .table-responsive {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .navbar,
+[data-theme="dark"] .modal-content,
+[data-theme="dark"] .table-responsive {
+    background: rgba(30, 30, 40, 0.95) !important;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #eee;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(13, 110, 253, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+
+/* Hover Effects */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.1) !important;
+}
+
+[data-theme="dark"] .table-hover tbody tr:hover {
+    background-color: rgba(255,255,255,0.1) !important;
+}
+
+/* Charts */
+canvas {
+    width: 100% !important;
+    height: 260px !important;
+    max-height: 260px !important;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: rotate(30deg);
+}
