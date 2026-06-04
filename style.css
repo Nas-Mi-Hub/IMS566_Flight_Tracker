@@ -1,0 +1,26 @@
+/* Custom Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hover effect for tables */
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+/* Chart containers */
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* Fixed sizing for Chart.js to prevent stretching */
+canvas {
+    width: 100% !important;
+    height: 260px !important;
+    max-height: 260px !important;
+}
